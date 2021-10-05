@@ -1,0 +1,12 @@
+작업일지
+
+<0921>-서버반영
+jetstream 통한 로그인 회원가입 구현
+실행
+composer require laravel/jetstream
+php artisan jetstream:install livewire
+php artisan jetstream:install inertia
+npm install
+npm run dev
+php artisan migrate
+

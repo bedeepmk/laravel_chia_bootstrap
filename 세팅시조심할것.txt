@@ -1,0 +1,22 @@
+composer install
+php artisan key:generate
+php artisan config:cache
+php artisan migrate 
+chmod -R 777 storage/
+
+
+npm install 과 npm run dev 를 하게되면 mix 가 컴파일 되면서 app.css app.js 가 설치가 된다.
+
+
+
+##로컬에서
+"Composer를 root/super user로 실행하지 마십시오! 자세한 내용은 https://getcomposer.org/root를 참조하십시오."
+기본적으로 composer 명령은 루트 사용자로 실행 중인 경우 실행되지 않습니다.
+
+서버에서 이미 컴포져 의존성은 composer.lock 으로 걸려서있어서 
+로컬에서 새롭게 개발환경을 세팅하려면 
+
+composer.lock 파일과
+vendor 폴더를 삭제해주고
+
+composer install 을 다시 해준다.
