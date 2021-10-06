@@ -2076,12 +2076,6 @@ window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
  * to our Laravel back-end. This library automatically handles sending the
  * CSRF token as a header based on the value of the "XSRF" token cookie.
  */
-// try {
-//     window.Popper = require('./popper.js').default;
-//     window.$ = window.jQuery = require('jquery');
-// } catch (e) {
-//     console.log('app.js',e)
-// }
 
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';

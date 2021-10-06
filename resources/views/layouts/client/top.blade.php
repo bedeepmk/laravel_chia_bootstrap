@@ -7,15 +7,15 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Client @yield('title')</title>
 <!-- 공통폰트 -->
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"> 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- 공통스타일 -->
-<link href="/css/app.css{{$invalidatingCacheStr}}"  rel="stylesheet" type="text/css" />
-<link href="/css/common.css{{$invalidatingCacheStr}}"  rel="stylesheet" type="text/css" />  
+<script src="/css/app.css{{$invalidatingCacheStr}}"></script>
+
 <!-- 공통스크립트 -->
 <script src="/js/app.js{{$invalidatingCacheStr}}"></script>
 <script src="/js/common.js{{$invalidatingCacheStr}}"></script>
