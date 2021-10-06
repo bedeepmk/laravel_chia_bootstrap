@@ -11,12 +11,16 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace League\CommonMark\Extension\Mention\Generator;
+namespace League\CommonMark\Input;
 
-use League\CommonMark\Extension\Mention\Mention;
-use League\CommonMark\Node\Inline\AbstractInline;
-
-interface MentionGeneratorInterface
+interface MarkdownInputInterface
 {
-    public function generateMention(Mention $mention): ?AbstractInline;
+    public function getContent(): string;
+
+    /**
+     * @return iterable<int, string>
+     */
+    public function getLines(): iterable;
+
+    public function getLineCount(): int;
 }

@@ -11,12 +11,10 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace League\CommonMark\Extension\Mention\Generator;
+namespace League\CommonMark\Extension\TableOfContents\Node;
 
-use League\CommonMark\Extension\Mention\Mention;
-use League\CommonMark\Node\Inline\AbstractInline;
+use League\CommonMark\Extension\CommonMark\Node\Block\ListBlock;
 
-interface MentionGeneratorInterface
+final class TableOfContents extends ListBlock
 {
-    public function generateMention(Mention $mention): ?AbstractInline;
 }
