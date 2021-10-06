@@ -2,7 +2,7 @@
 @endcomponent 
 @yield('styles') 
 @yield('scripts_top')  
-<body class='antialiased'>
+<body>
 <container>
 @component('layouts.client.header')
 @endcomponent 
@@ -15,6 +15,4 @@
 </body>
 
 @yield('scripts_bottom')
-<!-- 
-@component('layouts.client.bottom')
-@endcomponent  -->
+ 
